@@ -1,0 +1,11 @@
+\ProvidesPackage{formatting}
+% В этом стилевом файле будет предложены новые команды
+% \player{name}[remark] --- это будет подсвечиваться автор и если есть ремарка, то она будет в скобках
+% \action{some text} --- в этой команде будет описываться происходящее на сцене 
+\usepackage{ifthen}
+
+\newcommand{\player}[2][x]{\par{\bfseries #2}\ifthenelse{\equal{#1}{x}}{}{(#1)}. }
+\newcommand{\action}[1]{\begin{center}{\LARGE #1}\end{center}}
+\newcommand{\scene}[1]{\begin{center}{\Large #1}\end{center}}
+\newcommand{\innerremark}[1]{{\itshape (#1.)}}
+\newcommand{\remark}[1]{{\par\vspace{1em}\itshape #1} \vspace{1em}}
