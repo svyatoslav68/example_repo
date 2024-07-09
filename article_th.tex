@@ -2,6 +2,7 @@
 %\usepackage{theatre}
 \usepackage[russian]{babel}
 \usepackage[utf8]{inputenc}
+\usepackage{enumitem}
 
 \usepackage{formatting} 
 
@@ -51,7 +52,7 @@ https://github.com/cli/cli/blob/trunk/docs/install\_linux.md
 \action{Действие второе.}
 \scene{Явление первое.}
 \remark{В своем кабинете Святослав, обхватив голову руками, погрузился в размышления.}
-\player[Вспелснув руками]{Святослав}Да, а что я сижу? Я же обещал решительнейшим образом заняться
+\player[Всплелснув руками]{Святослав}Да, а что я сижу? Я же обещал решительнейшим образом заняться
 разработкой документации для чайника.
 \remark{Склоняется над клавиатурой. Совершает следующие манипуляции:
 	\begin{enumerate}
@@ -66,19 +67,20 @@ https://github.com/cli/cli/blob/trunk/docs/install\_linux.md
  gh repo create instruction --public --gitignore TeX
 	создается репозиторий на github.
 	\end{enumerate}
-}
-
 \player{От автора}
  Команда gh --- это префикс команд интерфейса командной строки для управления
 github. Прежде, чем управлять сервисом github нужно пройти авторизацию с помощью команды
   gh auth login
 
-8. Командой 
+  \begin{enumerate}[resume]
+	  \item  Командой 
 	git remote add origin <address repository>
 локальный git-репозиторий связывается с удаленным репозиторием по имени origin.
-9. Теперь нужно файлы из локального репозитория поместить в удаленный репозиторий. Для этого
+\item  Теперь нужно файлы из локального репозитория поместить в удаленный репозиторий. Для этого
 выполняется команда:
 	git push --set-upstream origin master
+\end{enumerate}
+}
 
 \player{От автора}
 Здесь возникнут некоторые проблемы, связанные с тем, что при создании 
