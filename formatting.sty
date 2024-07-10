@@ -3,9 +3,15 @@
 % \player{name}[remark] --- это будет подсвечиваться автор и если есть ремарка, то она будет в скобках
 % \action{some text} --- в этой команде будет описываться происходящее на сцене 
 \usepackage{ifthen}
+\usepackage{pdfpages}
 
-\newcommand{\player}[2][x]{\par{\bfseries #2}\ifthenelse{\equal{#1}{x}}{}{(#1)}. }
+\newcommand{\player}[2][x]{\par{\normalfont\bfseries #2}\ifthenelse{\equal{#1}{x}}{}{{\normalfont(#1)}}. }
 \newcommand{\action}[1]{\begin{center}{\LARGE #1}\end{center}}
 \newcommand{\scene}[1]{\begin{center}{\Large #1}\end{center}}
 \newcommand{\innerremark}[1]{{\itshape (#1.)}}
 \newcommand{\remark}[1]{{\par\vspace{1em}\itshape #1} \vspace{1em}}
+
+\newcommand{\examplecode}[1]{{\normalfont\par\texttt{#1}\par}}
+\newcommand{\showtext}[1]{\fbox{#1}}
+%\newcommand{\showpdf}[1]{{\noindent\centering\begin{figure}\includegraphics[scale=.5]{#1}\end{figure}}}
+\newcommand{\showpdf}[1]{\includepdf[pages=1,scale=.3,frame,delta=1 1]{#1}}
