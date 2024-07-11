@@ -1,7 +1,7 @@
 \ProvidesPackage{formatting}
 % В этом стилевом файле будет предложены новые команды
 % \player{name}[remark] --- это будет подсвечиваться автор и если есть ремарка, то она будет в скобках
-% \action{some text} --- в этой команде будет описываться происходящее на сцене 
+% \remark{some text} --- в этой команде будет описываться происходящее на сцене 
 \usepackage{ifthen}
 \usepackage{pdfpages}
 
@@ -12,6 +12,6 @@
 \newcommand{\remark}[1]{{\par\vspace{1em}\itshape #1} \vspace{1em}}
 
 \newcommand{\examplecode}[1]{{\normalfont\par\texttt{#1}\par}}
-\newcommand{\showtext}[1]{\fbox{#1}}
+\newcommand{\showtext}[1]{\par\fbox{\begin{minipage}{.8\textwidth}{\small\texttt{#1}}\end{minipage}}}
 %\newcommand{\showpdf}[1]{{\noindent\centering\begin{figure}\includegraphics[scale=.5]{#1}\end{figure}}}
 \newcommand{\showpdf}[1]{\includepdf[pages=1,scale=.3,frame,delta=1 1]{#1}}

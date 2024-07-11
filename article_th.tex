@@ -2,6 +2,7 @@
 %\usepackage{theatre}
 \usepackage[russian]{babel}
 \usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
 \usepackage{enumitem}
 \usepackage{graphicx}
 
@@ -63,6 +64,12 @@ https://github.com/cli/cli/blob/trunk/docs/install\_linux.md
 		\item Созданные файлы наполняет содержимым. В файле README.md обычно помещается краткое (в одном-двух
 предложениях) описание проекта. Файлы instruction.txt и permission.txt представлены в листигах 
 \ref{list-instruction-first} и \ref{list-permission-first}.
+\begin{figure}
+	\centering
+	\showtext{\input{instruction-first.txt}}
+	\caption{Первый вариант инструкции.}
+	\label{list-instruction-first}
+\end{figure}
 \item Командой \examplecode{git add *.txt .gitignore README.md} файлы добавляются в индекс.
 \item Командой \examplecode{git commit -m ``Проект документов''} создается первый коммит проекта.
 \item Командой: \examplecode{gh repo create instruction --public --gitignore TeX}
@@ -105,7 +112,7 @@ MarkDown. Ему не терпится что-то им разметить.
 
 \player{От автора} Кирилл тоже пользуется интерфейсом командной строки для взаимодействия с сервером
 github. Все манипуляции с сервером github можно делать с помощью web-интерфейса, нажимая
-	нужные кнопочки в браузере. Но в этом коллективе участники предпочитают пользоваться интерфейсом
+нужные кнопочки в браузере. Но в этом коллективе участники предпочитают пользоваться интерфейсом
 командной строки. 
 
 Кирилл делает fork репозитория Святослава, одновременно
@@ -248,6 +255,11 @@ git clone instructions.bundle
 
 \player{Proba}Кто-то что-то говорит.
 %\showpdf{article-th}
+\showtext{Да, по-моему, интернет --- это рассадник мерзостей. 
+	Хотя бы, на работе я стараюсь оградить себя от связанных с ним неприятностей. 
+	Кстати, к flash-накопителям я тоже отношусь с недоверием. Надеюсь, ты принес ваши наработки
+	на настоящем православном CD-диске? 
+}
 
 \section{Заключение}
 
