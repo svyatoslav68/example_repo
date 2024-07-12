@@ -1,0 +1,10 @@
+c281f51 Merge pull request \#3 from kirill-git-article/dev-1\par
+195ea6c Добавлена строка в файл README.md\par
+15d1861 Change README.md\par
+4ca8a73 Merge pull request \#2 from kirill-git-article/too-develop\par
+50c2776 Proba pull-request\par
+be711dc принимается pull-request от Кирилла Merge branch 'Anton-Example-kirill-develop'\par
+f5248b6 Add markdown-file instruction.\par
+e9c4871 Error correction.\par
+6012bfb Add prohibitiing part.\par
+33dace7 В проект добавлены все файлы
