@@ -1,0 +1,5 @@
+The bundle contains these 2 refs:\par
+64aa63cfae9188fab15841e711cc539f3c8fc7c9 HEAD\par
+c281f51fa3276880e5a2e7a40ee943850bef47a9 refs/heads/master\par
+Пакет содержит полную историю.\par
+The bundle uses this hash algorithm: sha1\par
