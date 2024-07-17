@@ -6,7 +6,7 @@
 \usepackage{pdfpages}
 
 \newcommand{\player}[2][x]{\par{\normalfont\bfseries #2}\ifthenelse{\equal{#1}{x}}{}{{\normalfont(#1)}}. }
-\newcommand{\action}[1]{\begin{center}{\LARGE #1}\end{center}}
+\newcommand{\action}[1]{\begin{center}{\LARGE #1}\end{center}\nopagebreak[4]}
 \newcommand{\scene}[1]{\begin{center}{\Large #1}\end{center}\nopagebreak[4]}
 \newcommand{\innerremark}[1]{{\itshape (#1.)}}
 \newcommand{\remark}[1]{{\par\vspace{1em}\itshape #1} \vspace{1em}}
